@@ -1,0 +1,27 @@
+{
+    "name": "tpbot",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*",
+        "pxt-TPBot": "github:elecfreaks/pxt-TPBot#v2.0.5",
+        "pxt-PlanetX-AI": "github:elecfreaks/pxt-PlanetX-AI#v1.0.8"
+    },
+    "files": [
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "7.0.61",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj",
+    "languageRestriction": "javascript-only"
+}
