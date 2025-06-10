@@ -8,14 +8,12 @@ function movement(sp: number, detect: boolean) {
     
     //detect and move obstacle
     if (TPBot.sonarJudge(TPBot.Sonarjudge.Less, 7) && !detect) {
-        detect = true
         TPBot.setServo(TPBot.ServoTypeList.S360, TPBot.ServoList.S1, 90)
         TPBot.setTravelTime(TPBot.DriveDirection.Left, sp, 1)
         TPBot.setTravelTime(TPBot.DriveDirection.Forward, sp, 1)
         TPBot.setServo(TPBot.ServoTypeList.S360, TPBot.ServoList.S1, 360)
         TPBot.setTravelTime(TPBot.DriveDirection.Backward, sp, backMovementEqualizer)
         TPBot.setTravelTime(TPBot.DriveDirection.Right, sp, rightTurnElqualizer)
-        detect = false
     }
     
     //follow line
